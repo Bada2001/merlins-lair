@@ -1,0 +1,6 @@
+# Copy to terraform.tfvars and fill in your own values.
+# terraform.tfvars is gitignored.
+
+# Your home/office IP for kubectl access to the EKS public endpoint.
+# Find it with: curl -4 ifconfig.me
+api_allowed_cidrs = ["1.2.3.4/32"]

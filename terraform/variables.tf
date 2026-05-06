@@ -9,3 +9,8 @@ variable "project" {
   type        = string
   default     = "merlins-lair"
 }
+
+variable "api_allowed_cidrs" {
+  description = "CIDRs allowed to reach the EKS public API endpoint. Set in terraform.tfvars (gitignored)."
+  type        = list(string)
+}
