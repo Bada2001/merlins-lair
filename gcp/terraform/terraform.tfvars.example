@@ -1,0 +1,9 @@
+# Copy to terraform.tfvars and fill in your own values.
+# terraform.tfvars is gitignored.
+
+# GCP project ID. The project must already exist and have billing enabled.
+project_id = "your-gcp-project-id"
+
+# Your home/office IP for kubectl access to the GKE control plane public endpoint.
+# Find it with: curl -4 ifconfig.me
+api_allowed_cidrs = ["1.2.3.4/32"]
